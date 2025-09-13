@@ -14,12 +14,13 @@ class Person:
         return self.age >= 18
 
 
-p1 = Person("Alice", 30)
-p1.display()
-p1.birthday
-print(p1.is_adult())
+if (__name__ == "__main__"):
+    p1 = Person("Alice", 30)
+    p1.display()
+    p1.birthday()
+    print(p1.is_adult())
 
-p2 = Person("Bob", 15)
-p2.display()
-p2.birthday()
-print(p2.is_adult())
+    p2 = Person("Bob", 15)
+    p2.display()
+    p2.birthday()
+    print(p2.is_adult())
